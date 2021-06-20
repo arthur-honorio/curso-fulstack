@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="UA-X-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Avançado</title>
+    </head>
+    <body>
+        <form action="enviado.html" method="GET">
+            <fieldset>
+                <legend>Bora se conhecer?</legend>
+
+                <label>Qual sua fruta preferida, mano?</label>
+                <br>
+                <input list="listaFrutas" type="text" name="fruta" placeholder="Diz aí, meu irmão">
+                
+                <datalist id="listaFrutas">
+                    <option value="É Mamão?">
+                    <option value="Pera?">
+                    <option value="Será Tomate?">
+                    <option value="Ou Tâmara?">
+                </datalist>
+    
+                <br><br>
+    
+                <label for="historia">Sua história:</label>
+                <br>
+                <textarea name="historia" id="historia" cols="30" rows="20" placeholder="Conte aqui algo sobre você"></textarea>
+    
+                <br><br>
+    
+                <input type="submit">
+
+            </fieldset>
+
+        </form>
+    </body>
+</html>

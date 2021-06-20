@@ -1,0 +1,91 @@
+body {
+    background-color: #dfdfdf;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(44, 44, 44);
+    margin: 0;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.foto-perfil {
+    width: 150px;
+
+    margin: 30px 30px 0;
+    border: solid 2px #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.social-img {
+    margin: 0 5px;
+    width: 30px;
+}
+
+.social-links {
+    text-decoration: none;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+h2 {
+    font-weight: 100;
+    font-style: italic;
+    letter-spacing: -.3px;
+    margin-top: 0;
+    color: #615f5f;
+}
+
+.padding20 {
+    padding-left: 20px;
+}
+
+.sobre-mim {
+    margin: 60px 0;
+    text-align: justify;
+    font-size: 120%;
+}
+
+.trabalho {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.trabalho h4 {
+    margin-bottom: 5px;
+}
+
+.trabalho h5 {
+    margin: 0 0 5px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.trabalho p {
+    margin: 0;
+}
+
+footer {
+    margin: 100px 0 0;
+    padding: 10px 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 90%;
+    font-weight: 100;
+}
+
+.fonte-site {
+    color: rgb(27, 198, 255);
+    font-weight: 400;
+    text-decoration: none;
+}

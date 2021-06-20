@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;   
+    background-color: rgb(245, 245, 245); 
+    background-image: url(../src/img/2k_Dissolve_Noise_Texture.png);
+    background-blend-mode: overlay;
+}
+
+.header {
+    background-image: url(../src/img/quem-somos.jpg);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-color: rgb(63, 231, 243);
+    text-align: center;
+    padding: 60px 0;
+}
+
+.header img {
+    height: 100px;
+}
+
+.container {
+    display:flex;
+    padding: 30px 0;
+}
+
+ul {
+    list-style:none;
+    color: white;
+}
+
+.navbar {
+    width: 10%;
+    padding: 0 30px 0 0;
+    margin: 0 50px 0 0;
+}
+
+.navbar li {
+    text-align: center;
+    display: block;
+    padding: 20px 10px;
+    background: #0ED5EA;
+    border-bottom: 1px solid rgb(134, 247, 255);
+}
+
+.navbar li:first-child{
+    border-radius: 0 5px 0 0;
+}
+
+.navbar li:last-child{
+    padding-bottom: 100px;
+    border-radius: 0 0 150px 0;
+}
+
+.navbar li :hover {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.navbar a {
+    color: #080236;
+    font-weight:900;
+    text-decoration: none;
+}
+
+.content {
+    border: 1px solid #080236;
+    border-radius: 250px 0 0 5px;
+    border-right: none;
+    width: 90%;
+    padding: 180px 130px;
+    color: #080236;
+}
+
+.content h2 {
+    margin-bottom: 50px;
+    color:#0ED5EA;
+    font-size: 40px;
+
+}
+
+.content p {
+    margin: 15px 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0ED5EA;
+    color: #080236;
+}

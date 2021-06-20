@@ -1,0 +1,21 @@
+.exemplo {
+    border: 1px solid black;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.exemplo1 p {
+    color: red;
+}
+
+.exemplo2 > p {
+    color: red;
+}
+
+.exemplo3 + p {
+    color: green;
+}
+
+.exemplo4 ~ p {
+    color: purple;
+}

@@ -1,0 +1,53 @@
+body {
+    font-size: 20px;
+    margin: 20px auto;
+    width: 800px;
+}
+
+
+::selection {
+    color: red;
+    background: black;
+}
+
+h1 {
+    font-size: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+h1::before {
+    background-image: url(https://img.icons8.com/ios/452/spiderman-new.png);
+    background-size:cover;
+    width: 70px;
+    height:70px;
+    content:"";
+    display:inline-block;
+    margin-right: 10px;
+}
+
+h1::after {
+    background-image: url(https://img.icons8.com/ios/452/spiderman-new.png);
+    background-size:cover;
+    width: 70px;
+    height:70px;
+    content:"";
+    display:inline-block;
+    margin-left: 10px;
+}
+
+p {
+    margin: 0;
+    line-height:130%;
+    text-align: justify;
+}
+
+p:nth-child(2)::first-letter, 
+p:nth-child(3)::first-letter{
+    font-size: 50px;
+    color: red;
+    margin: 0;
+    line-height: 60px;
+}

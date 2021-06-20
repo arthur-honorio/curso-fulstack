@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    padding: 20px 40px;
+    background-color: black;
+}
+
+.logo {
+    letter-spacing: -3px;
+}
+
+.logo span:first-child {
+    color: blue;
+}
+
+.logo span:last-child {
+    font-size: 13px;
+    letter-spacing: normal;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu > li,
+.submenu > li,
+.submenu2 > li{
+    position: relative;
+}
+
+.menu > li a {
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu > li > a {
+    padding: 37px 30px;
+}
+
+.submenu li a {
+    padding: 20px;
+}
+
+.menu > li:hover > .submenu ,
+.submenu > li:hover > .sub2,
+.sub2:hover + .submenu2,
+.submenu2:hover {
+    display: block;
+}
+
+.menu > li:hover > .box,
+.menu > li:hover > .submenu > .box,
+.submenu > li:hover > .box,
+.submenu2 > li:hover .box {
+    display: block;
+    background-color: orange;
+}
+
+.submenu > li:hover > .sub2 {
+    visibility: visible;
+}
+
+.submenu li {
+    box-sizing: content-box;
+}
+
+.submenu li:hover {
+    background-color: darkblue;
+}
+
+.submenu2 li:hover {
+    background-color: orange;
+}
+
+.submenu,
+.submenu2 {
+    display:none;
+    position: absolute;
+    background-color: blue;
+    min-width: 120%;
+    list-style: none;
+}
+
+.submenu2 {
+    left: 100%;
+    top: 33%;
+    background-color: orange;
+}
+
+.submenu2 li:hover {
+    background-color: orangered;
+    background: linear-gradient(90deg,orange 95%, orangered 100%)
+}
+
+.submenu2 li:hover a {
+    color: darkblue;
+}
+
+.box {
+    display: none;
+    position: absolute;
+    background-color: blueviolet;
+}
+
+.bottom {
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+}
+
+.top {
+    top: -5px;
+    left: 0;
+    height: 5px;
+    width: 100%;
+}
+
+.sub2 {
+    visibility:hidden; 
+    position: absolute;
+    top: 33%;
+    right: 0;
+    width: 40px;
+    height: 33%;
+    border-radius: 10px 0 0 10px;
+}

@@ -1,0 +1,27 @@
+h1 {
+    font-size: 50px;
+    font-weight: 100;
+    font-style: italic;
+    font-variant: small-caps;
+    text-align: left;
+    letter-spacing: 50px;
+    text-indent: 82px;
+}
+
+span {
+    word-spacing: 80px;
+}
+
+p {
+    line-height: 50px;
+    /* text-decoration-style:wavy; */
+    text-decoration: underline;
+    /* text-decoration: double;  */
+}
+
+
+a {
+    /* text-decoration-color: red; */
+    /* text-decoration-thickness: 10px; */
+}
+

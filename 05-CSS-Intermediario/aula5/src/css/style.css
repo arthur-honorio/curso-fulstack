@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+} 
+
+body{
+    display: flex;
+}
+
+.div {
+
+    border: 1px solid black;
+    padding: 20px;
+    margin: 30px 10px 80px;
+    width: 100px;
+    height: 200px;
+}
+
+.d1 {
+    overflow: hidden;
+}
+
+.d2 {
+    overflow: scroll;
+}
+
+.d3 {
+    overflow-x: auto;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div class="comum father-relative">
+        Pai Relativo.
+        <div class="comum absolute-relative">
+            <p>
+                Position Absolute
+            </p>
+            <p class="descricao rosa">
+                &lt;&lt;&lt;&lt;&lt; <br> Este é o filho<br> do Pai Relativo.<br><br>
+                Seus dados de posição usam a posição do pai como base.
+            </p>
+        </div>
+    </div>
+    <div class="comum father">
+        Pai Padrão.
+        <div class="comum absolute">
+            <p>
+                Position Absolute
+            </p>
+            <p class="descricao azul">
+                &gt;&gt;&gt;&gt;&gt;<br>
+                Este é o filho <br>do Pai Padrão.  <br><br>
+                Ele vai respeitar<br> o primeiro elemento com position relative/absolute, <br>acima dele<br> na hierarquia direta. 
+                <br><br>
+                <span class="bold">
+                    Caso nenhum seja, respeitará o Body, que é relative<br>por padrão.
+                </span>
+            </p>
+        </div>
+    </div>
+    <div class="comum fixed">Fixed</div>
+</body>
+</html>

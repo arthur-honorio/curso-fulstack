@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 50px;
+    color: midnightblue;
+}
+
+.div {
+    margin-bottom: 20px;
+    border: 1px solid darkcyan;
+    padding: 30px;
+    width: 600px;
+}
+
+.de-ladinho {
+    display: flex;
+    align-items: center;
+}
+
+.espacinho {
+    margin-left: 15px;
+}
+
+.cor1:hover {
+    background-color:deepskyblue;
+}
+
+.cor2:hover {
+    color:greenyellow;
+}
+
+.cor3:hover {
+    color:lightsalmon;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: violet;
+}
+
+.clicking:active {
+    color: orangered;
+}
+
+.clicked:visited {
+    color: pink;
+}
+
+.some:hover ~ .roxo {
+    display:none;
+}
+
+.quadrado {
+    margin-top: 15px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+.roxo {
+    background-color: purple;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 22px;
+    
+}
+
+ul li:first-child {
+    color:seagreen;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+ul li:last-child {
+    color:orange;
+    font-style: italic;
+}
+
+ul li:nth-child(4) {
+    color: slateblue;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.flex{
+    display: block;
+}
