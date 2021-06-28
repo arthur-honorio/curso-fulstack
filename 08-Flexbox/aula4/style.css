@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 50px;
+  font: 700 20px 'Arial', sans-serif;
+}
+
+.container {
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+  margin: 15px 0;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+}
+
+.row {
+  width: 300px;
+  height: 100px;
+  background-color: rgb(231, 231, 231);
+  justify-content: space-around;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.divider-h {
+  height: 15px;
+  background-color: white;
+}
+
+.red {
+  color: crimson;
+}
+
+.pink {
+  color: white;
+  background-color: crimson;
+}
+
+.green1 {
+  color: white;
+  background-color: yellowgreen;
+}
+
+.green {
+  color: white;
+  background-color: seagreen;
+}
+
+.blue {
+  color: white;
+  background-color: deepskyblue;
+}
+
+.first {
+  order: -1;
+}
+
+.last {
+  order: 4;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.grow1 {
+  flex-grow: 1;
+}
+
+.grow2 {
+  flex-grow: 2;
+}
+
+.grow4 {
+  flex-grow: 4;
+}

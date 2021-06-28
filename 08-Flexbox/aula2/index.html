@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta chatset="UTF-8" />
+    <meta http-equiv="XA-U-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS FlexBox</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- container flex-start flex-end center -->
+    <section class="container flex center">
+      <!-- div para centrarlizar no container -->
+      <div>
+        <!-- justify-content: flex-start -->
+        <div>
+          <p>justify-content: flex-start</p>
+
+          <!-- divisor horizontal -->
+          <div class="divider-h"></div>
+
+          <div class="flex row">
+            <div class="box flex center pink">1</div>
+            <div class="box flex center green1">2</div>
+            <div class="box flex center green">3</div>
+            <div class="box flex center blue">4</div>
+          </div>
+        </div>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <!-- justify-content: flex-end -->
+        <div>
+          <p>justify-content: flex-end</p>
+
+          <!-- divisor horizontal -->
+          <div class="divider-h"></div>
+
+          <div class="flex row row-reverse">
+            <div class="box flex center pink">1</div>
+            <div class="box flex center green1">2</div>
+            <div class="box flex center green">3</div>
+            <div class="box flex center blue">4</div>
+          </div>
+        </div>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <!-- justify-content: center -->
+        <div>
+          <p>justify-content: center</p>
+
+          <!-- divisor horizontal -->
+          <div class="divider-h"></div>
+
+          <div class="flex row row-center">
+            <div class="box flex center pink">1</div>
+            <div class="box flex center green1">2</div>
+            <div class="box flex center green">3</div>
+            <div class="box flex center blue">4</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- container space-between around evenly -->
+    <section class="container flex center">
+      <!-- div para centrarlizar no container -->
+      <div>
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <!-- justify-content: space-between -->
+        <div>
+          <p>justify-content: space-between</p>
+
+          <!-- divisor horizontal -->
+          <div class="divider-h"></div>
+
+          <div class="flex row row-between">
+            <div class="box flex center pink">1</div>
+            <div class="box flex center green1">2</div>
+            <div class="box flex center green">3</div>
+            <div class="box flex center blue">4</div>
+          </div>
+        </div>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <!-- justify-content: space-around -->
+        <div>
+          <p>justify-content: space-around</p>
+
+          <!-- divisor horizontal -->
+          <div class="divider-h"></div>
+
+          <div class="flex row row-around">
+            <div class="box flex center pink">1</div>
+            <div class="box flex center green1">2</div>
+            <div class="box flex center green">3</div>
+            <div class="box flex center blue">4</div>
+          </div>
+        </div>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <!-- justify-content: space-evenly -->
+        <div>
+          <p>justify-content: space-evenly</p>
+
+          <!-- divisor horizontal -->
+          <div class="divider-h"></div>
+
+          <div class="flex row row-evenly">
+            <div class="box flex center pink">1</div>
+            <div class="box flex center green1">2</div>
+            <div class="box flex center green">3</div>
+            <div class="box flex center blue">4</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- container das columns -->
+    <section class="container flex center">
+      <!-- flex-direction: column -->
+      <div>
+        <p>justify-<br />content:<br />flex-<br />start</p>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <div class="flex column">
+          <div class="box flex center pink">1</div>
+          <div class="box flex center green1">2</div>
+          <div class="box flex center green">3</div>
+          <div class="box flex center blue">4</div>
+        </div>
+      </div>
+
+      <!-- divisor vertical -->
+      <div class="divider-v"></div>
+
+      <!-- flex-direction: column-reverse -->
+      <div>
+        <p>justify-<br />content:<br />flex-<br />end</p>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <div class="flex column col-reverse">
+          <div class="box flex center pink">1</div>
+          <div class="box flex center green1">2</div>
+          <div class="box flex center green">3</div>
+          <div class="box flex center blue">4</div>
+        </div>
+      </div>
+
+      <!-- divisor vertical -->
+      <div class="divider-v"></div>
+
+      <!-- flex-direction: column-reverse -->
+      <div>
+        <p>justify-<br />content:<br />center</p>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <div class="flex column col-center">
+          <div class="box flex center pink">1</div>
+          <div class="box flex center green1">2</div>
+          <div class="box flex center green">3</div>
+          <div class="box flex center blue">4</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- container das columns -->
+    <section class="container flex center">
+      <!-- flex-direction: column -->
+      <div>
+        <p>justify-<br />content:<br />space-<br />between</p>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <div class="flex column col-between">
+          <div class="box flex center pink">1</div>
+          <div class="box flex center green1">2</div>
+          <div class="box flex center green">3</div>
+          <div class="box flex center blue">4</div>
+        </div>
+      </div>
+
+      <!-- divisor vertical -->
+      <div class="divider-v"></div>
+
+      <!-- flex-direction: column-reverse -->
+      <div>
+        <p>justify-<br />content:<br />space-<br />around</p>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <div class="flex column col-around">
+          <div class="box flex center pink">1</div>
+          <div class="box flex center green1">2</div>
+          <div class="box flex center green">3</div>
+          <div class="box flex center blue">4</div>
+        </div>
+      </div>
+
+      <!-- divisor vertical -->
+      <div class="divider-v"></div>
+
+      <!-- flex-direction: column-reverse -->
+      <div>
+        <p>justify-<br />content:<br />space<br />evenly</p>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <div class="flex column col-evenly">
+          <div class="box flex center pink">1</div>
+          <div class="box flex center green1">2</div>
+          <div class="box flex center green">3</div>
+          <div class="box flex center blue">4</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

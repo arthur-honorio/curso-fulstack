@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta chatset="UTF-8" />
+    <meta http-equiv="XA-U-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS FlexBox</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- container das rows -->
+    <section class="container flex center">
+      <!-- div para centrarlizar no container -->
+      <div>
+        <!-- flex-direction: row -->
+        <div>
+          <p>Flex-Direction: Row</p>
+
+          <!-- divisor horizontal -->
+          <div class="divider-h"></div>
+
+          <div class="flex row">
+            <div class="box flex center pink">1</div>
+            <div class="box flex center green1">2</div>
+            <div class="box flex center green">3</div>
+            <div class="box flex center blue">4</div>
+          </div>
+        </div>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <!-- flex-direction: row-reverse -->
+        <div>
+          <p>Flex-Direction: Row-<span class="red">Reverse</span></p>
+
+          <!-- divisor horizontal -->
+          <div class="divider-h"></div>
+
+          <div class="flex row row-reverse">
+            <div class="box flex center pink">1</div>
+            <div class="box flex center green1">2</div>
+            <div class="box flex center green">3</div>
+            <div class="box flex center blue">4</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- container das columns -->
+    <section class="container flex center">
+      <!-- flex-direction: column -->
+      <div>
+        <p>Flex-<br />Direction:<br />Column<br />&nbsp;</p>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <div class="flex column">
+          <div class="box flex center pink">1</div>
+          <div class="box flex center green1">2</div>
+          <div class="box flex center green">3</div>
+          <div class="box flex center blue">4</div>
+        </div>
+      </div>
+
+      <!-- divisor vertical -->
+      <div class="divider-v"></div>
+
+      <!-- flex-direction: column-reverse -->
+      <div>
+        <p>
+          Flex-<br />Direction:<br />Column-<br />
+          <span class="red">Reverse</span>
+        </p>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <div class="flex column col-reverse">
+          <div class="box flex center pink">1</div>
+          <div class="box flex center green1">2</div>
+          <div class="box flex center green">3</div>
+          <div class="box flex center blue">4</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- container sem wrap -->
+    <section class="container flex center">
+      <!-- div para centralizar no container -->
+      <div>
+        <h1>NoWrap:</h1>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <p>O flex expreme o conteúdo<br />para caber em seu container.</p>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <!-- flex-direction: row com wrap -->
+        <div>
+          <p>Flex-Direction: Row</p>
+
+          <!-- divisor horizontal -->
+          <div class="divider-h"></div>
+
+          <div class="flex row">
+            <div class="box flex center pink">1</div>
+            <div class="box flex center green1">2</div>
+            <div class="box flex center green">3</div>
+            <div class="box flex center blue">4</div>
+            <div class="box flex center pink">5</div>
+            <div class="box flex center green1">6</div>
+            <div class="box flex center green">7</div>
+            <div class="box flex center blue">8</div>
+          </div>
+        </div>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <!-- flex-direction: row-reverse com wrap -->
+        <div>
+          <div class="flex row row-reverse">
+            <div class="box flex center pink">1</div>
+            <div class="box flex center green1">2</div>
+            <div class="box flex center green">3</div>
+            <div class="box flex center blue">4</div>
+            <div class="box flex center pink">5</div>
+            <div class="box flex center green1">6</div>
+            <div class="box flex center green">7</div>
+            <div class="box flex center blue">8</div>
+          </div>
+
+          <!-- divisor horizontal -->
+          <div class="divider-h"></div>
+
+          <p>Flex-Direction: Row-<span class="red">Reverse</span></p>
+        </div>
+      </div>
+    </section>
+    <!-- container das rows wrap -->
+    <section class="container flex center">
+      <!-- div para centralizar no container -->
+      <div>
+        <h1>Wrap:</h1>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <!-- flex-direction: row com wrap -->
+        <div>
+          <p>Flex-Direction: Row</p>
+
+          <!-- divisor horizontal -->
+          <div class="divider-h"></div>
+
+          <div class="flex row wrap">
+            <div class="box flex center pink">1</div>
+            <div class="box flex center green1">2</div>
+            <div class="box flex center green">3</div>
+            <div class="box flex center blue">4</div>
+            <div class="box flex center pink">5</div>
+            <div class="box flex center green1">6</div>
+            <div class="box flex center green">7</div>
+            <div class="box flex center blue">8</div>
+          </div>
+        </div>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <!-- flex-direction: row-reverse com wrap -->
+        <div>
+          <div class="flex row row-reverse wrap">
+            <div class="box flex center pink">1</div>
+            <div class="box flex center green1">2</div>
+            <div class="box flex center green">3</div>
+            <div class="box flex center blue">4</div>
+            <div class="box flex center pink">5</div>
+            <div class="box flex center green1">6</div>
+            <div class="box flex center green">7</div>
+            <div class="box flex center blue">8</div>
+          </div>
+
+          <!-- divisor horizontal -->
+          <div class="divider-h"></div>
+
+          <p>Flex-Direction: Row-<span class="red">Reverse</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- container das rows wrap-reverse -->
+    <section class="container flex center">
+      <!-- div para centralizar no container -->
+      <div>
+        <h1>Wrap-<span class="red">Reverse:</span></h1>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <!-- flex-direction: row com wrap -->
+        <div>
+          <p>Flex-Direction: Row</p>
+
+          <!-- divisor horizontal -->
+          <div class="divider-h"></div>
+
+          <div class="flex row wrap-reverse">
+            <div class="box flex center pink">1</div>
+            <div class="box flex center green1">2</div>
+            <div class="box flex center green">3</div>
+            <div class="box flex center blue">4</div>
+            <div class="box flex center pink">5</div>
+            <div class="box flex center green1">6</div>
+            <div class="box flex center green">7</div>
+            <div class="box flex center blue">8</div>
+          </div>
+        </div>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <!-- flex-direction: row-reverse com wrap -->
+        <div>
+          <div class="flex row row-reverse wrap-reverse">
+            <div class="box flex center pink">1</div>
+            <div class="box flex center green1">2</div>
+            <div class="box flex center green">3</div>
+            <div class="box flex center blue">4</div>
+            <div class="box flex center pink">5</div>
+            <div class="box flex center green1">6</div>
+            <div class="box flex center green">7</div>
+            <div class="box flex center blue">8</div>
+          </div>
+
+          <!-- divisor horizontal -->
+          <div class="divider-h"></div>
+
+          <p>Flex-Direction: Row-<span class="red">Reverse</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- container das columns com wrap -->
+    <section class="container flex center">
+      <!-- div para centralizar no container -->
+      <div>
+        <h1>Wrap:</h1>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <!-- div para deixar columns lado a lado -->
+        <div class="flex">
+          <!-- flex-direction: column com wrap -->
+          <div>
+            <p>Flex-<br />Direction:<br />Column<br />&nbsp;</p>
+
+            <!-- divisor horizontal -->
+            <div class="divider-h"></div>
+
+            <div class="flex column wrap">
+              <div class="box flex center pink">1</div>
+              <div class="box flex center green1">2</div>
+              <div class="box flex center green">3</div>
+              <div class="box flex center blue">4</div>
+              <div class="box flex center pink">5</div>
+              <div class="box flex center green1">6</div>
+              <div class="box flex center green">7</div>
+              <div class="box flex center blue">8</div>
+            </div>
+          </div>
+
+          <!-- divisor vertical -->
+          <div class="divider-v"></div>
+
+          <!-- flex-direction: column-reverse com wrap-->
+          <div>
+            <p>
+              Flex-<br />Direction:<br />Column-<br /><span class="red"
+                >Reverse</span
+              >
+            </p>
+
+            <!-- divisor horizontal -->
+            <div class="divider-h"></div>
+
+            <div class="flex column col-reverse wrap">
+              <div class="box flex center pink">1</div>
+              <div class="box flex center green1">2</div>
+              <div class="box flex center green">3</div>
+              <div class="box flex center blue">4</div>
+              <div class="box flex center pink">5</div>
+              <div class="box flex center green1">6</div>
+              <div class="box flex center green">7</div>
+              <div class="box flex center blue">8</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- container das columns com wrap-reverse -->
+    <section class="container flex center">
+      <!-- div para centralizar no container -->
+      <div>
+        <h1>Wrap-<span class="red">Reverse:</span></h1>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <!-- div para deixar columns lado a lado -->
+        <div class="flex">
+          <!-- flex-direction: column com wrap -->
+          <div>
+            <p>Flex-<br />Direction:<br />Column<br />&nbsp;</p>
+
+            <!-- divisor horizontal -->
+            <div class="divider-h"></div>
+
+            <div class="flex column wrap-reverse">
+              <div class="box flex center pink">1</div>
+              <div class="box flex center green1">2</div>
+              <div class="box flex center green">3</div>
+              <div class="box flex center blue">4</div>
+              <div class="box flex center pink">5</div>
+              <div class="box flex center green1">6</div>
+              <div class="box flex center green">7</div>
+              <div class="box flex center blue">8</div>
+            </div>
+          </div>
+
+          <!-- divisor vertical -->
+          <div class="divider-v"></div>
+
+          <!-- flex-direction: column-reverse com wrap-->
+          <div>
+            <p>
+              Flex-<br />Direction:<br />Column-<br /><span class="red"
+                >Reverse</span
+              >
+            </p>
+
+            <!-- divisor horizontal -->
+            <div class="divider-h"></div>
+
+            <div class="flex column col-reverse wrap-reverse">
+              <div class="box flex center pink">1</div>
+              <div class="box flex center green1">2</div>
+              <div class="box flex center green">3</div>
+              <div class="box flex center blue">4</div>
+              <div class="box flex center pink">5</div>
+              <div class="box flex center green1">6</div>
+              <div class="box flex center green">7</div>
+              <div class="box flex center blue">8</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

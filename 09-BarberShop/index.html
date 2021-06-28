@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="XA-U-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barber Shop</title>
+    <link rel="shortcut icon" href="src/img/logo.png" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <section class="home">
+      <header class="header">
+        <nav class="nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li>
+              <img src="src/img/logo.png" alt="Logo Barber Shop" class="logo" />
+            </li>
+            <li><a href="#appointment">Agendamento</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#location">Localização</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="banner">
+        <p>profissionalismo e excelência</p>
+        <h1>Barber Shop</h1>
+        <p>O melhor lugar para cuidar do seu estilo</p>
+        <img src="src/img/much-img.png" alt="Bigodinho Ícone" />
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="business-hours">
+          <div class="multiply">
+            <img
+              class="scisor"
+              src="src/img/classic-cut.png"
+              alt="Ícone de tesoura"
+            />
+            <h3>HORÁRIOS</h3>
+            <p>Segunda-feira a Sexta-feira<br />09:00 a 17:00</p>
+            <p>Sábado<br />09:00 a 14:00</p>
+            <p>Domingo<br />Fechado</p>
+            <img class="icon" src="src/img/loc-ic.png" alt="Pin de endereço" />
+            <span class="span">Rua da Matrix, 33.</span>
+            <img class="icon" src="src/img/phone-ic.png" alt="Ícone de Telefone" />
+            <span class="span">(11) 9999.0999</span>
+          </div>
+        </div>
+        <div class="experience">
+          <h5>Uma história única</h5>
+          <h2>52 anos de experiência</h2>
+          <div class="text">
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus,
+                optio corrupti laborum sit corporis ullam quod, nostrum
+                excepturi, dolorem sequi nesciunt minus quo cupiditate eum
+                sapiente cum aliquid? Est, atque.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus,
+                optio corrupti laborum sit corporis ullam quod, nostrum
+                excepturi, dolorem sequi nesciunt minus quo cupiditate eum
+                sapiente cum aliquid? Est, atque.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus,
+                optio corrupti laborum sit corporis ullam quod, nostrum
+                excepturi, dolorem sequi nesciunt minus quo cupiditate eum
+                sapiente cum aliquid? Est, atque.
+              </p>
+            </div>
+            <img
+              src="src/img/shave-brush.jpg"
+              alt="Escova de espuma para barbear"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <div class="header">
+          <h2>Nosso Serviços</h2>
+          <img src="src/img/heading-ic.png" alt="Ícone bigode" />
+        </div>
+        <div class="description">
+          <ul>
+            <li>
+              <img class="service-icon" src="src/img/classic-cut.png" alt="" />
+              <br />
+              <span>Lorem ipsum</span>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum,
+                corporis nobis ratione nulla magni illum maiores eligendi
+                laudantium pariatur, veritatis accusantium? Recusandae sapiente
+                itaque quasi a sed architecto, dolorem ratione.
+              </p>
+            </li>
+            <li>
+              <img class="service-icon" src="src/img/clipper-cut.png" alt="" />
+              <br />
+              <span>Lorem ipsum</span>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum,
+                corporis nobis ratione nulla magni illum maiores eligendi
+                laudantium pariatur, veritatis accusantium? Recusandae sapiente
+                itaque quasi a sed architecto, dolorem ratione.
+              </p>
+            </li>
+            <li>
+              <img class="service-icon" src="src/img/razor-shaver.png" alt="" />
+              <br />
+              <span>Lorem ipsum</span>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum,
+                corporis nobis ratione nulla magni illum maiores eligendi
+                laudantium pariatur, veritatis accusantium? Recusandae sapiente
+                itaque quasi a sed architecto, dolorem ratione.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="appointment" class="appointment">
+      <div class="container">
+        <header class="header">
+          <h2>Faça um agendamento</h2>
+          <img src="src/img/heading-ic-white.png" alt="Separador" />
+        </header>
+        <form class="form" action="thank-you.html" method="POST">
+          <div class="personal-data">
+            <div class="input-wrapper">
+              <label for="name">Nome</label>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Digite o seu nome:"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="email">E-mail</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Digite o seu e-mail:"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="telephone">Telefone</label>
+              <input
+                id="telephone"
+                type="number"
+                name="telephone"
+                placeholder="Digite o seu telefone:"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="service">Telefone</label>
+              <select name="service" id="service">
+                <option value="haircut">Corte de cabelo</option>
+                <option value="shave">Fazer a barba</option>
+                <option value="haricut-shave">Cabelo e Barba</option>
+              </select>
+            </div>
+          </div>
+          <div class="input2">
+            <label for="message">Mensagem:</label>
+            <input class="message" type="text-area" id="message" />
+          </div>
+          <button>Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="header">
+        <h2>Galeria de imagens</h2>
+        <img src="src/img/heading-ic.png" alt="Galeria de Imagens" />
+      </div>
+      <div class="gallery-wrapper">
+        <div>
+          <img src="src/img/gallery-img1.png" alt="Imagem da galeria" />
+        </div>
+        <div>
+          <img src="src/img/gallery-img2.png" alt="Imagem da galeria" />
+        </div>
+        <div>
+          <img src="src/img/gallery-img3.png" alt="Imagem da galeria" />
+        </div>
+        <div>
+          <img src="src/img/gallery-img4.png" alt="Imagem da galeria" />
+        </div>
+        <div>
+          <img src="src/img/gallery-img5.png" alt="Imagem da galeria" />
+        </div>
+        <div>
+          <img src="src/img/gallery-img6.png" alt="Imagem da galeria" />
+        </div>
+        <div>
+          <img src="src/img/gallery-img7.png" alt="Imagem da galeria" />
+        </div>
+      </div>
+    </section>
+
+    <section id="location" class="location">
+      <div class="container">
+        <div class="map-header">
+
+          <div class="info">
+            <div class="box">
+              <img src="src/img/map-img1.png" alt="Localização">
+            </div>
+            <span>Localização<br>Rua da Matrix, 33</span>
+          </div>
+
+          <div class="info">
+            <div class="box">
+              <img src="src/img/map-img2.png" alt="Telefone">
+            </div>
+            <span>Telefone<br>(11) 9999.9999</span>
+          </div>
+            
+          <div class="info">
+            <div class="box">
+              <img src="src/img/map-img3.png" alt="Email">
+            </div>
+            <span>E-mail<br>contato@barbershop.com</span>
+          </div>
+
+          <div class="info">
+            <div class="box">
+              <img src="src/img/map-img4.png" alt="Horário">
+            </div>
+            <span>Horário<br>Seg a Sex: 9h a 17h</span>
+          </div>
+
+        </div>
+        <iframe class:="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.301688984171!2d-38.499094984776704!3d-3.744314144303261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7489022226c73%3A0xd4654a278d8b7a78!2sRua%20General%20Tertuliano%20Potiguara%20-%20Aldeota%2C%20Fortaleza%20-%20CE!5e0!3m2!1spt-BR!2sbr!4v1624727127380!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+    <footer>
+      <p>
+        © 2021 Barber Shop - Todos os direitos reservados
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta chatset="UTF-8" />
+    <meta http-equiv="XA-U-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS FlexBox</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- container row align-items -->
+    <section class="container flex center">
+      <!-- div para centrarlizar no container -->
+      <div>
+        <!-- justify-content: flex-start -->
+        <div>
+          <p>align-items: flex-start</p>
+
+          <!-- divisor horizontal -->
+          <div class="divider-h"></div>
+
+          <div class="flex row">
+            <div class="box flex center pink">1</div>
+            <div class="box flex center green1">2</div>
+            <div class="box flex center green">3</div>
+            <div class="box flex center blue">4</div>
+          </div>
+        </div>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <!-- justify-content: flex-end -->
+        <div>
+          <p>align-items: flex-end</p>
+
+          <!-- divisor horizontal -->
+          <div class="divider-h"></div>
+
+          <div class="flex row row-items-end">
+            <div class="box flex center pink">1</div>
+            <div class="box flex center green1">2</div>
+            <div class="box flex center green">3</div>
+            <div class="box flex center blue">4</div>
+          </div>
+        </div>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <!-- justify-content: center -->
+        <div>
+          <p>align-items: center</p>
+
+          <!-- divisor horizontal -->
+          <div class="divider-h"></div>
+
+          <div class="flex row row-items-center">
+            <div class="box flex center pink">1</div>
+            <div class="box flex center green1">2</div>
+            <div class="box flex center green">3</div>
+            <div class="box flex center blue">4</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- container row wrap align-content -->
+    <section class="container flex center">
+      <!-- div para centrarlizar no container -->
+      <div>
+        <!-- justify-content: space-between -->
+        <div>
+          <p>wrap - align-content: flex-start</p>
+
+          <!-- divisor horizontal -->
+          <div class="divider-h"></div>
+
+          <div class="flex row-110 wrap row-content-start">
+            <div class="box-40 flex center pink">1</div>
+            <div class="box-40 flex center green1">2</div>
+            <div class="box-40 flex center green">3</div>
+            <div class="box-40 flex center blue">4</div>
+            <div class="box-40 flex center pink">5</div>
+            <div class="box-40 flex center green1">6</div>
+            <div class="box-40 flex center green">7</div>
+            <div class="box-40 flex center blue">8</div>
+            <div class="box-40 flex center pink">9</div>
+          </div>
+        </div>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <!-- justify-content: space-around -->
+        <div>
+          <p>wrap - align-content: flex-end</p>
+
+          <!-- divisor horizontal -->
+          <div class="divider-h"></div>
+
+          <div class="flex row-110 wrap row-content-end">
+            <div class="box-40 flex center pink">1</div>
+            <div class="box-40 flex center green1">2</div>
+            <div class="box-40 flex center green">3</div>
+            <div class="box-40 flex center blue">4</div>
+            <div class="box-40 flex center pink">5</div>
+            <div class="box-40 flex center green1">6</div>
+            <div class="box-40 flex center green">7</div>
+            <div class="box-40 flex center blue">8</div>
+            <div class="box-40 flex center pink">9</div>
+          </div>
+        </div>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <!-- justify-content: space-evenly -->
+        <div>
+          <p>wrap - align-content: center</p>
+
+          <!-- divisor horizontal -->
+          <div class="divider-h"></div>
+
+          <div class="flex row-110 wrap row-content-center">
+            <div class="box-40 flex center pink">1</div>
+            <div class="box-40 flex center green1">2</div>
+            <div class="box-40 flex center green">3</div>
+            <div class="box-40 flex center blue">4</div>
+            <div class="box-40 flex center pink">5</div>
+            <div class="box-40 flex center green1">6</div>
+            <div class="box-40 flex center green">7</div>
+            <div class="box-40 flex center blue">8</div>
+            <div class="box-40 flex center pink">9</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

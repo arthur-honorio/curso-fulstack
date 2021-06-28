@@ -1,0 +1,501 @@
+/*************************************
+**************************************
+**************************************
+-----------RESET
+**************************************
+**************************************
+**************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*************************************
+**************************************
+**************************************
+-----------BASE
+**************************************
+**************************************
+**************************************/
+
+:root {
+  --padding-sections: 120px 0;
+  --margin-bottom-section-header: 80px;
+
+  --color-primary: #917758;
+  --color-secondary: #3c2915;
+  --color-light: #ece0d3;
+  --color-gray: #c5b198;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+h2 {
+  font: 400 50px 'Poppins', sans-serif;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+
+/*************************************
+**************************************
+**************************************
+-----------HOME
+**************************************
+**************************************
+**************************************/
+
+body {
+  height: 100vh;
+  background-image: url(../img/bg-home.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home .header,
+.home .header .nav,
+.home .header .nav ul,
+.home .header .nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .header {
+  padding-top: 60px;
+}
+
+.home .header .nav ul {
+  list-style: none;
+}
+
+.home .header .nav ul li {
+  min-width: 150px;
+}
+
+.home .header .nav ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 30px;
+}
+
+.home .header .nav ul li a:hover {
+  color: var(--color-primary);
+  border-bottom: 4px solid var(--color-primary);
+}
+
+.home .header .nav ul li .logo {
+  padding: 0 30px;
+}
+
+.banner {
+  height: calc(100vh - 190px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner > p:first-of-type {
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.banner h1 {
+  font-size: 120px;
+  color: white;
+  line-height: 100px;
+  margin: 40px;
+}
+
+.banner > p:last-of-type {
+  color: white;
+  padding: 0 0 30px 0;
+}
+
+/*************************************
+**************************************
+**************************************
+-----------ABOUT
+**************************************
+**************************************
+**************************************/
+
+.about {
+  background-color: var(--color-primary);
+}
+.about h2 {
+  margin: 15px 0;
+}
+.about > .container {
+  display: flex;
+}
+
+.about .business-hours {
+  position: relative;
+  top: -50px;
+  width: 33%;
+  background-size: cover;
+  background-image: url(../img/brush-big.jpg);
+}
+
+.about .multiply {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: calc(100% - 40px);
+  color: white;
+  margin: 20px;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.about .multiply .scisor {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.about .multiply h3 {
+  width: fit-content;
+  font-size: 30px;
+  color: var(--color-primary);
+  margin: 0 auto 25px auto;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.about .multiply p::first-line {
+  font: 400 15px 'Poppins', sans-serif;
+  color: #7a7d80;
+}
+
+.about .multiply p,
+.about .multiply p:after {
+  min-width: 200px;
+  font: 400 16px 'Poppins', sans-serif;
+}
+
+.about .multiply p:after {
+  display: block;
+  margin-top: 15px;
+  content: '*';
+  font-size: 25px;
+}
+
+.about .multiply p:last-of-type:after {
+  display: block;
+  content: '|';
+  margin: 10px 0 30px;
+}
+
+.about .multiply .icon {
+  margin-bottom: 15px;
+}
+
+.about .multiply .span:first-of-type {
+  margin-bottom: 20px;
+}
+
+.about .experience {
+  padding: var(--padding-sections);
+  width: 67%;
+  margin-left: 7%;
+  color: white;
+}
+
+.about .experience .text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .experience h2:after {
+  display: block;
+  content: '';
+  width: 100px;
+  height: 2px;
+  background-color: var(--color-gray);
+  margin: 20px 0;
+}
+
+.about .experience h5 {
+  font-size: 13px;
+}
+
+.about .experience p {
+  font-weight: 400;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+/*************************************
+**************************************
+**************************************
+-----------SERVICES
+**************************************
+**************************************
+**************************************/
+
+.services {
+  padding: var(--padding-sections);
+  background-color: var(--color-light);
+}
+
+.services .header {
+  text-align: center;
+  margin-bottom: var(--margin-bottom-section-header);
+}
+
+.services .header h2 {
+  color: var(--color-secondary);
+}
+
+.services .description ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services .description ul li {
+  text-align: center;
+  width: 30%;
+  border: 2px solid var(--color-primary);
+  padding: 50px 40px;
+}
+
+.services .description ul li img {
+  margin-bottom: 20px;
+  width: auto;
+  height: 70px;
+}
+
+.services .description ul li span {
+  font-weight: bold;
+  color: var(--color-secondary);
+}
+.services .description ul li p {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.services .description ul li span:after {
+  display: block;
+  content: '';
+  width: 100px;
+  height: 20px;
+  margin: 05px auto 15px auto;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/head-line-ic.png);
+}
+
+/*************************************
+**************************************
+**************************************
+-----------APPOINTMENT
+**************************************
+**************************************
+**************************************/
+
+.appointment {
+  background-color: var(--color-primary);
+  background-image: url(../img/chair-ic.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 300px;
+}
+
+.appointment .container {
+  padding: var(--padding-sections);
+}
+
+.appointment .header {
+  text-align: center;
+  margin-bottom: var(--margin-bottom-section-header);
+}
+
+.appointment .header h2 {
+  color: var(--color-light);
+}
+
+.appointment .header img {
+  margin-top: 10px;
+}
+
+.appointment .container .form .personal-data {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.appointment .container .form .personal-data .input-wrapper {
+  width: 23%;
+}
+
+.appointment .container .form .input2 {
+  margin-top: 20px;
+}
+
+.appointment .container .form input,
+.appointment .container .form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  outline-style: none;
+  background-color: white;
+}
+
+.form label {
+  display: block;
+  color: var(--color-light);
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.appointment .message {
+  height: 100px;
+}
+
+.appointment button {
+  margin-top: 15px;
+  color: var(--color-light);
+  display: block;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: var(--color-secondary);
+  border-style: none;
+  outline: none;
+}
+
+/*************************************
+**************************************
+**************************************
+-----------GALLERY
+**************************************
+**************************************
+**************************************/
+
+.gallery {
+  padding: var(--padding-sections);
+  background-color: var(--color-light);
+}
+
+.gallery .header {
+  text-align: center;
+  margin-bottom: var(--margin-bottom-section-header);
+}
+
+.gallery .header h2 {
+  color: var(--color-primary);
+}
+
+.gallery .header img {
+  margin-top: 10px;
+}
+
+.gallery img {
+  margin: 0 auto;
+  display: block;
+}
+
+.gallery .gallery-wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 900px;
+  height: 80vh;
+}
+
+.gallery .gallery-wrapper div {
+  width: 33%;
+  border: 10px solid var(--color-primary);
+  margin: 5px;
+}
+
+.gallery .gallery-wrapper div img {
+  width: 100%;
+}
+
+/*************************************
+**************************************
+**************************************
+-----------LOCATION
+**************************************
+**************************************
+**************************************/
+
+.location {
+  padding: var(--padding-sections);
+  background-image: url(../img/bg-location.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.location .map {
+  width: 100%;
+}
+
+.location .map-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 40px;
+  width: 100%;
+  font-size: 13px;
+  color: white;
+  font-weight: 400;
+}
+
+.location .map-header .info {
+  display: flex;
+  align-items: center;
+}
+
+.location .map-header .info span::first-line {
+  color: silver;
+}
+
+.location .map-header .info .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-primary);
+  border-radius: 50%;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+/*************************************
+**************************************
+**************************************
+-----------FOOTER
+**************************************
+**************************************
+**************************************/
+
+footer {
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  font-size: 12px;
+}

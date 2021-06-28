@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="UA-X-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Avançado</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article>
+      <header>
+        <h1 id="topo">CSS Avançado</h1>
+        <h2>
+          Utilizando <a href="#variables">Variables,</a> <a href="#import">Import,</a> <a href="#filter">Filter,</a> <a href="#transitions">Transitions,</a> <a href="#transform">Transform,</a> <a href="#animation">Animation.</a>
+        </h2>
+      </header>
+      <article class="content">
+        <h3 id="variables">Variables</h3>
+        <h4>Definição:</h4>
+        <p>
+          Variables, como o próprio nome diz, são as variáveis do CSS, e são
+          como as variáveis de qualquer linguagem, você armazena um valor dentro
+          de um nome para reutilizá-lo depois.
+        </p>
+        <h4>Criação:</h4>
+        <p>
+          Normalmente é introduzida dentro do seletor root ( :root {} ), para ser acessível a todo o documento, mas pode ser utilizada dentro do escopo de qualquer seletor, e seu
+          nome sempre deve ser iniciado por "--" da seguinte forma:
+          <br />
+          <br />
+          <span>:root { <br />&nbsp;&nbsp;--cor-primaria: red; <br />}</span>
+        </p>
+        <h4>Utilização:</h4>
+          Para ser utilizada a variable deve ser estar dentro de parenteses atrelados à palavra "var" da seguinte forma:<br><br>
+          <span>var(--cor-primaria)</span><br><br> Ela é utilizada como o valor de uma propriedade de um
+          seletor CSS. Exemplo: <br />
+          <br /><span>
+            :root { <br />&nbsp;&nbsp;--cor-primaria: red; <br />}</span>
+          <br />
+          <br />
+          <span>h1 { <br> &nbsp;&nbsp;color:&nbsp;var(--cor-primaria);<br>&nbsp;&nbsp;border-color: var(--cor-primaria)<br>}</span>
+        </p><br><br>
+        <a href="#topo">Voltar ao topo</a>
+        <div class="separador"></div>
+      </article>
+
+
+      <article class="content">
+        <h3 id="import">Import</h3>
+        <h4>Definição:</h4>
+        <p>
+          É um elemento que adiciona escalabilidade e praticidade à configuração
+          visual de um site com muitas páginas diferentes. Ela serve para
+          diminuir a repetição no trabalho de edição em caso de alteração.
+        </p>
+        <h4>Utilização:</h4>
+        <p>
+          Para utilizar o import basta adicionar um @ seguido da palavra import, um espaço simples e o url completo do documento css que se deseja importar, por exemplo:<br><br><span>
+            @import 'arquivo-a-ser-importado.css'</span><br><br>
+        </p><br><br>
+        <a href="#topo">Voltar ao topo</a>
+        <div class="separador"></div>
+      </article>
+
+
+      <article class="content">
+        <h3 id="filter">Filter</h3>
+        <h4>Definição:</h4>
+        <p>
+          É um atributo que permite a mudança de cor, desfoque, luminosidade, constraste, etc. de um elemento. É utilizado principalmente com a tag &lt;img&gt;.
+        </p>
+        <h4>Exemplo:</h4>
+        <img title="Sem fitro" src="https://images.unsplash.com/photo-1624465737527-4a3d5fe40f06?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mar visto de cima">
+        <img class="pb" title="Com filtro grayscale e contrast" src="https://images.unsplash.com/photo-1624465737527-4a3d5fe40f06?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mar visto de cima"><br><br>
+        <a href="#topo">Voltar ao topo</a>
+        <div class="separador"></div>
+      </article>
+
+
+      <article class="content">
+        <h3 id="transitions">Transitions</h3>
+        <h4>Definição:</h4>
+        <p>
+          São animações simples que dão dinamismo às operações de hover.
+          Adicionando atraso, duração especifica, e ease para deixar tudo mais suave.
+        </p>
+        <h4>Exemplo:</h4>
+        <div class="box width"></div>
+        <br><br>
+        <div class="box color"></div>
+        <br><br>
+        <a href="#topo">Voltar ao topo</a>
+        <div class="separador"></div>
+      </article>
+
+
+      <article class="content">
+        <h3 id="transform">Transform</h3>
+        <h4>Definição:</h4>
+        <p>
+          São animações simples que dão dinamismo às operações de hover.
+          Adicionando atraso, duração especifica, e ease para deixar tudo mais suave.
+        </p>
+        <h4>Exemplo:</h4>
+        <div class="box transition rotate "></div>
+        <br><br>
+        <div class="box translate"></div>
+        <br><br>
+        <a href="#topo">Voltar ao topo</a>
+        <div class="separador"></div>
+      </article>
+
+
+      <article class="content">
+        <h3 id="animation">Animation</h3>
+        <h4>Definição:</h4>
+        <p>
+          Diferente do <a href="#transform">transform</a>, que precisa de uma ação para iniciar a animação, o Animation inicia automaticamente, podendo durar o tempo determinado pelo programador.
+        </p>
+        <h4>Exemplo:</h4>
+        <div class="ani animation-box">
+          <div class="ani line"></div>
+          <div class="ani line2"></div>
+          <div class="ani line3"></div>
+          <div class="ani line3 line4"></div>
+          <div class="ani animation"></div>
+          <br><br>
+          <div class="ani animation2"></div>
+          <br><br>
+          <a href="#topo">Voltar ao topo</a>
+          <div class="separador"></div>
+        </div>
+      </article>
+    </article>
+  </body>
+</html>

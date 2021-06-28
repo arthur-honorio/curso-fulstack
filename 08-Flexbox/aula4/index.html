@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta chatset="UTF-8" />
+    <meta http-equiv="XA-U-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS FlexBox</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- container row align-items -->
+    <section class="container flex center">
+      <!-- div para centrarlizar no container -->
+      <div>
+        <!-- order -->
+        <div>
+          <p>order</p>
+
+          <!-- divisor horizontal -->
+          <div class="divider-h"></div>
+
+          <div class="flex row">
+            <div class="box flex center pink last">1</div>
+            <div class="box flex center green1">2</div>
+            <div class="box flex center green">3</div>
+            <div class="box flex center blue first">4</div>
+          </div>
+        </div>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <!-- align-self -->
+        <div>
+          <p>align-self</p>
+
+          <!-- divisor horizontal -->
+          <div class="divider-h"></div>
+
+          <div class="flex row">
+            <div class="box flex center pink self-end">1</div>
+            <div class="box flex center green1">2</div>
+            <div class="box flex center green self-center">3</div>
+            <div class="box flex center blue">4</div>
+          </div>
+        </div>
+
+        <!-- divisor horizontal -->
+        <div class="divider-h"></div>
+
+        <!-- flex-grow -->
+        <div>
+          <p>flex-grow</p>
+
+          <!-- divisor horizontal -->
+          <div class="divider-h"></div>
+
+          <div class="flex row">
+            <div class="box flex center pink grow1">1</div>
+            <div class="box flex center green1 grow2">2</div>
+            <div class="box flex center green grow1">3</div>
+            <div class="box flex center blue grow4">4</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

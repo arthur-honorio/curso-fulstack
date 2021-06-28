@@ -1,0 +1,11 @@
+:root {
+  --color-primary: salmon;
+  --color-secondary: coral;
+  --color-alt: lightgreen;
+
+  --color-font: rgb(129, 129, 129);
+  --font-h1: 700 45px 'Arial', sans-serif;
+  --font-h2: 700 30px 'Arial', sans-serif;
+  --font-h3: 700 20px 'Arial', sans-serif;
+  --font-text: 400 16px 'Arial', sans-serif;
+}

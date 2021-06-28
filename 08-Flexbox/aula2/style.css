@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 50px;
+  font: 700 20px 'Arial', sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  margin: 15px 0;
+}
+
+.container {
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+}
+
+.divider-h {
+  height: 15px;
+  background-color: white;
+}
+
+.divider-v {
+  width: 60px;
+  background-color: white;
+}
+
+.row {
+  width: 400px;
+  height: 80px;
+  background-color: rgb(231, 231, 231);
+}
+
+.column {
+  flex-direction: column;
+  width: 80px;
+  height: 350px;
+  background-color: rgb(231, 231, 231);
+}
+
+.row-reverse,
+.col-reverse {
+  justify-content: flex-end;
+}
+
+.row-center,
+.col-center {
+  justify-content: center;
+}
+
+.row-between,
+.col-between {
+  justify-content: space-between;
+}
+
+.row-around,
+.col-around {
+  justify-content: space-around;
+}
+
+.row-evenly,
+.col-evenly {
+  justify-content: space-evenly;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+}
+
+.red {
+  color: crimson;
+}
+
+.pink {
+  color: white;
+  background-color: crimson;
+}
+
+.green1 {
+  color: white;
+  background-color: yellowgreen;
+}
+
+.green {
+  color: white;
+  background-color: seagreen;
+}
+
+.blue {
+  color: white;
+  background-color: deepskyblue;
+}
