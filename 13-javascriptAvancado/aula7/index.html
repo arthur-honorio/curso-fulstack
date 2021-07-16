@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .toast {
+      display: inline-block;
+      position: absolute;
+      left: -100%;
+      bottom: 30px;
+      background-color: rgb(235, 170, 127);
+      border: tomato  3px solid;
+      border-radius: 5px;
+      transition: left 900ms ease-in-out;
+      color: rgb(209, 88, 44);
+      padding: 20px 40px;
+    }
+
+    .toast.on {
+      left: 30px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <input type="text" class="input" placeholder="Digite seu e-mail">
+  <button class="botao">Cadastrar</button>
+  <div class="toast">oi</div>
+  <script src='script.js'></script>
+</body>
+</html>
