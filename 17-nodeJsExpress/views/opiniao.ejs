@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head.ejs') %>
+
+  <body>
+    <%- include('partials/header.ejs') %>
+
+    <section class="container">
+
+      <%- include('partials/nav.ejs') %>
+      <article class="content">
+        <div class="opinion-board">
+          <h2>Sua opinião é muito importante</h2>  
+          <img src="img/quem-somos.jpg" alt="Imagem da equipe">
+
+          <% feedbacks.forEach((item) => { %>
+
+            <div class="stars">
+              <% if (item.stars) { %>
+                <% for( let index = 0; index < item.stars; index++ ) { %>
+                  <span><img src="https://icon-library.com/images/star-icon-png/star-icon-png-26.jpg" width=20></span>
+                <% } %>                  
+              <% } %>
+            </div>
+            <h3> <%= item.title %> </h3>
+            <p> <%= item.content %> </p>
+
+          <% }) %>
+        </div>            
+        
+      </article>
+    </section>
+    <%- include ('partials/footer.ejs') %>
+    <%- include ('partials/foot.ejs') %>
+  </body>
+</html>

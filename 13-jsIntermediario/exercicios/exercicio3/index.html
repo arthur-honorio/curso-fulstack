@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      padding: 20px;
+      font-family: sans-serif;
+    }
+
+    .disabled {
+      display: none;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      gap: 10px;
+    }
+
+    label {
+      display: inline-block;
+      width: 80px;
+    }
+
+    select {
+      min-width: 150px;
+      background-color: white;
+      padding: 5px;
+      border-radius: 3px;
+    }
+    
+    select:focus {
+      outline: none;
+    }
+
+    .erro {
+      border: red 2px solid;
+      color: red;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      color: red;
+      font-size: 12px;
+      display: block;
+    }
+
+    button {
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    button:active {
+      background-color: silver;
+      color: white;
+    }
+    
+
+  </style>
+</head>
+<body>
+  <form action="" id="local" method="GET">
+    <div class="div-estados">
+      <label for="estados">Estado:</label>
+      <select name="estados" id="estados">
+        <option value="">Selecione  ---------</option>
+        <option value="sp">São Paulo</option>
+        <option value="rj">Rio de Janeiro</option>
+      </select>
+      <span></span>
+    </div>
+    <div class="div-cidades">
+      <label class="labelCidade"for="cidades">Cidade:</label>
+      <select name="cidades" id="cidades"></select>
+      <span></span>
+    </div>
+    <button>Enviar</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
+
+

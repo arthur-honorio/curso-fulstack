@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head.ejs') %>
+
+  <body>
+    <%- include('partials/header.ejs') %>
+
+    <section class="container">
+
+      <%- include('partials/nav.ejs') %>
+      <article class="content">
+        <div class="new-opinion">
+          <form id="form" action="/opiniao_sucesso" method="post">
+
+            <h2>Deixe seu comentário</h2>
+            <div class="title-stars">
+              <input type="text" name="title" id="opinion-title" placeholder="Insira o título do artigo" required>
+              
+              <div class="choose-stars">
+                <label for="opinion-stars">Número de Estrelas</label>
+                <select name="stars" id="opinion-stars" required>
+                  <option class="opinion-clicked" value="">-----------------------------</option>
+                  <option class="opinion-none" disabled ></option>
+                  <option class="opinion-clicked" value="1">1</option>
+                  <option class="opinion-none" disabled ></option>
+                  <option class="opinion-clicked" value="2">2</option>
+                  <option class="opinion-none" disabled ></option>
+                  <option class="opinion-clicked" value="3">3</option>
+                  <option class="opinion-none" disabled ></option>
+                  <option class="opinion-clicked" value="4">4</option>
+                  <option class="opinion-none" disabled ></option>
+                  <option class="opinion-clicked" value="5">5</option>
+                  <option class="opinion-none" disabled ></option>
+                </select>
+              </div>
+            </div>
+
+            <br>
+            <textarea name="content" id="opinion-content" cols="30" rows="10" placeholder="Insira o conteúdo do artigo" required></textarea>
+
+            <br>
+            <button id="opinion-submit" type="opinion-submit">Enviar</button>
+
+            <% if (cadastro) { %>
+
+              <h4>Comentario recebido!</h4>
+
+            <% } %>
+
+          </form>
+        </div>
+      </article>
+    </section>
+    <%- include ('partials/footer.ejs') %>
+    <%- include ('partials/foot.ejs') %>
+  </body>
+</html>

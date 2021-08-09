@@ -1,1 +1,0 @@
-# fullstack_js_intermediario_exercicios.io

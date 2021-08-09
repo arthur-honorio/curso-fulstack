@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+--navbar-width: 150px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(245, 245, 245);
+  background-image: url(../img/2k_Dissolve_Noise_Texture.png);
+  background-blend-mode: overlay;
+}
+
+.header {
+  background-image: url(../img/quem-somos.jpg);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-color: rgb(63, 231, 243);
+  text-align: center;
+  padding: 60px 0;
+}
+
+.header img {
+  height: 100px;
+}
+
+.container {
+  display: flex;
+  padding: 30px 0;
+}
+
+
+/* ##################################################
+###################### Navbar #######################
+################################################## */
+
+
+.container .navbar {
+  width: var(--navbar-width);
+  text-align: center;
+  margin-right: 30px;
+  box-sizing: content-box;
+  padding-right: 35px;
+}
+
+.container .navbar ul {
+  list-style: none;
+  color: white;
+}
+
+.container .navbar ul li {
+  text-align: center;
+  display: block;
+  padding: 20px 10px;
+  background: #0ed5ea;
+  border-bottom: 1px solid rgb(134, 247, 255);
+}
+
+.container .navbar ul li:first-child {
+  border-radius: 0 5px 0 0;
+}
+
+.container .navbar ul li:last-child {
+  padding-bottom: 100px;
+  border-radius: 0 0 150px 0;
+}
+
+.container .navbar ul li :hover {
+  font-weight: bold;
+  font-size: 110%;
+}
+
+.container .navbar ul li a {
+  color: #080236;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+
+/* ##################################################
+##################### Content #######################
+################################################## */
+
+
+.container .content {
+  border: 1px solid #080236;
+  border-radius: 250px 0 0 5px;
+  border-right: none;
+  width: calc(100% - var(--navbar-width));
+  margin: 0 auto;
+  padding: 180px 130px 130px;
+  color: #080236;
+}
+
+
+/* ##################################################
+################## Opinion Board ####################
+################################################## */
+
+
+.container .content h2{
+  color: #0ed5ea;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.container .content > img {
+  margin-bottom: 50px 0;
+}
+
+.container .content .opinion-board {
+  width: 60%;
+}
+
+.container .content .opinion-board .stars {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.container .content .opinion-board :first-child .stars {
+  margin-top: 0;
+}
+
+.container .content .opinion-board .stars img {
+  width: 20px;
+}
+
+.container .content .opinion-board p {
+  margin: 15px 0;
+}
+
+
+/* ##################################################
+##################### Divider #######################
+################################################## */
+
+
+.container .content .divider {
+  margin: 0 5%;
+  border-right: 1px solid gray;
+  height: 100%;
+}
+
+
+/* ##################################################
+################### New Opinion #####################
+################################################## */
+
+
+.container .content .new-opinion #form {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.container .content .new-opinion #form h2 {
+  color:rgb(63, 231, 243)
+}
+
+
+.container .content .new-opinion #form .title-stars {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.container .content .new-opinion #form #opinion-content {
+  margin: 10px 0;
+}
+
+.container .content .new-opinion #form #opinion-content,
+.container .content .new-opinion #form #opinion-submit,
+.container .content .new-opinion #form #opinion-title,
+.container .content .new-opinion #form .choose-stars #opinion-stars,
+.container .content .new-opinion #form .choose-stars {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  border: 1px solid rgba(63, 231, 243, .5);
+}
+
+.container .content .new-opinion #form h4{
+  width: 100%;
+  color: royalblue;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.container .content .new-opinion #form .choose-stars #opinion-stars .opinion-clicked{
+  font-weight: bold;
+}
+
+.container .content .new-opinion #form .choose-stars #opinion-stars .opinion-none{
+  font-weight: bold;
+  color: white;
+  font-size: 5px;
+}
+.container .content .new-opinion #form .choose-stars #opinion-stars .opinion-none :hover{
+  font-weight: bold;
+  font-size: 5px;
+  color: white;
+  background-color: white;
+}
+
+
+.container .content .new-opinion #form .choose-stars #opinion-stars {
+  background-color: white;
+  width: 50%;
+}
+
+.container .content .new-opinion #form .choose-stars {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container .content .new-opinion #form #opinion-submit{
+  border: none;
+  outline: none;
+  background-color:rgb(63, 231, 243);
+  color: royalblue;
+  border-radius: 5px;
+}
+
+
+/* ##################################################
+##################### Footer ########################
+################################################## */
+
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0ed5ea;
+  color: #080236;
+}

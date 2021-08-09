@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img {
+      width: 30px;
+    }
+    .all {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      height: 35px;
+    }
+    .hide {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="all" id="all">
+    <input id="message" type="text" placeholder="Digite sua mensagem aqui">
+    <button id="button">Enviar</button>
+    <img class="hide" id="loading" src="loading.gif" alt="">
+  </div>
+  <span class="hide all" id="show-message"></span>
+  <script src="script.js"></script>
+</body>
+</html>
