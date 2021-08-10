@@ -5,3 +5,4 @@
 *.scss
 *.map
 17-nodeJsExpress/node_modules/
+18-mongodb/node_modules/
