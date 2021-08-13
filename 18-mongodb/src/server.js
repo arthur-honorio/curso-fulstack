@@ -1,6 +1,11 @@
 const express = require("express")
 const path = require("path")
 
+const db = require("./database")
+const routes = require("./routes")
+
+db.connect()
+
 const app = express()
 
 app.set("view engine", "ejs")
@@ -10,11 +15,7 @@ app.use(express.static(path.join(__dirname, "public")))
 
 app.use(express.urlencoded({extended : true}))
 
-app.get("/", (req, res) => {
-  res.render("index", {
-    title: "Titulo Teste"
-  })
-})
+app.use("/", routes)
 
 app.use((req, res) => {
   res.send("Pagina nao encontrada")
